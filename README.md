@@ -1,7 +1,6 @@
-# 🚀 Sapion - Excellence SAP Cloud
-
+# 🚀 Sidereal - Excellence SAP Solutions
 <div align="center">
-  <img src="./public/logo_sapion.png" alt="Sapion Logo" width="120" height="120" />
+  <img src="./public/logo_sapion.png" alt="Sidereal Logo" width="120" height="120" />
   
   ### **Construire de meilleures solutions SAP**
   
@@ -13,36 +12,18 @@
   [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0-purple?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
 </div>
 
-## 🏢 À propos de Sapion
+## 🏢 À propos de Sidereal
 
-**Sapion** est une entreprise spécialisée dans l'**implémentation et l'optimisation de services cloud SAP**. Nous accompagnons les entreprises dans leur transformation digitale en proposant des solutions sur mesure, performantes et sécurisées.
+**Sidereal** est une entreprise spécialisée dans l'**implémentation et l'optimisation de services SAP**. Nous accompagnons les entreprises dans leur transformation en proposant des solutions sur mesure, performantes et sécurisées.
 
 ### 🎯 Notre Mission
 Maximiser la performance des solutions SAP de nos clients grâce à une expertise technique de pointe et une approche centrée sur l'innovation.
-
-### 👨‍💼 Leadership
-**Quentin Leroux** - CEO et fondateur  
-5+ années d'expérience dans le conseil SAP et l'architecture cloud
-
-## 🛠️ Nos Services
-
-### ☁️ **Migration Cloud SAP**
-- Migration vers S/4HANA Cloud
-- Optimisation des performances
-- Architecture cloud sécurisée
-- Stratégie de migration personnalisée
 
 ### ⚙️ **Automatisation des Processus**
 - Workflows intelligents
 - Intégration système
 - Optimisation opérationnelle
 - Réduction des coûts
-
-### 🛡️ **Sécurité & Conformité**
-- Audit de sécurité SAP
-- Mise en conformité GDPR
-- Gouvernance des données
-- Solutions de protection avancées
 
 ### 📈 **Optimisation des Coûts**
 - Analyse des coûts SAP
@@ -57,7 +38,6 @@ Maximiser la performance des solutions SAP de nos clients grâce à une expertis
 | **Projets réalisés** | 50+ |
 | **Clients satisfaits** | 10+ |
 | **Années d'expérience** | 5+ |
-| **Taux de réussite** | 5+ |
 
 ### 📊 Projets Phares
 - **Migration S/4HANA** - TechCorp (5000+ employés, 8 mois)
@@ -67,13 +47,13 @@ Maximiser la performance des solutions SAP de nos clients grâce à une expertis
 ## 📧 Contact
 
 **Nous contacter :**
-- 📧 Email : [contact@sapion.com](mailto:contact@sapion.com)
-- 🔗 LinkedIn : [linkedin.com/company/sapion](https://linkedin.com/company/sapion)
-- 🌐 Site web : [sapion.com](https://sapion.com)
+- 📧 Email : [contact@sidereal.com](mailto:contact@sidereal.com)
+- 🔗 LinkedIn : [linkedin.com/company/sidereal](https://linkedin.com/company/sidereal)
+- 🌐 Site web : [sidereal.com](https://sidereal.com)
 
 ---
 
 <div align="center">
-  <p><strong>© 2025 Sapion. Tous droits réservés.</strong></p>
+  <p><strong>© 2025 Sidereal. Tous droits réservés.</strong></p>
   <p><em>Expertise SAP • Innovation Cloud • Transformation Digitale</em></p>
 </div>

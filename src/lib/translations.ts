@@ -4,8 +4,8 @@ export const translations = {
     nav: {
       home: 'Accueil',
       services: 'Services',
-      projects: 'Projets',
-      blog: 'Blog',
+      projects: 'Produits',
+      blog: 'Actualité',
       contact: 'Contact'
     },
     // Theme
@@ -40,9 +40,9 @@ export const translations = {
         }
       },
       about: {
-        title: 'À propos de Sapion',
+        title: 'À propos de Sidereal',
         subtitle: 'L\'expertise SAP au service de votre transformation digitale',
-        description: 'Depuis plus de 10 ans, Sapion accompagne les entreprises dans leur transformation digitale avec des solutions SAP innovantes et performantes. Notre approche personnalisée garantit des résultats mesurables et durables.',
+        description: 'Depuis plus de 10 ans, Sidereal accompagne les entreprises dans leur transformation digitale avec des solutions SAP innovantes et performantes. Notre approche personnalisée garantit des résultats mesurables et durables.',
         stats: {
           projects: 'Projets réalisés',
           clients: 'Clients satisfaits',
@@ -115,10 +115,10 @@ export const translations = {
         brochure: 'Télécharger notre brochure'
       }
     },
-    // Projects page
+    // Projects page (affiché comme Produits)
     projects: {
-      title: 'Nos Projets',
-      subtitle: 'Découvrez nos réalisations et les transformations réussies que nous avons menées pour nos clients',
+      title: 'Nos Produits',
+      subtitle: 'Découvrez nos produits et offres conçues pour répondre aux besoins de vos opérations SAP',
       filters: {
         all: 'Tous les projets',
         cloud: 'Migration Cloud',
@@ -137,9 +137,9 @@ export const translations = {
         support: 'Support continu'
       }
     },
-    // Blog page
+    // Blog page (affiché comme Actualité)
     blog: {
-      title: 'Notre Blog',
+      title: 'Actualité',
       subtitle: 'Actualités, analyses et insights sur l\'écosystème SAP, les tendances technologiques et les meilleures pratiques',
       featured: 'Article vedette',
       readMore: 'Lire la suite',
@@ -181,7 +181,7 @@ export const translations = {
         emailTitle: 'Email',
         phoneTitle: 'Téléphone', 
         addressTitle: 'Adresse',
-        email: 'contact@sapion.com',
+        email: 'contact@sidereal.com',
         emailDesc: 'Nous répondons sous 24h',
         phone: '+33 1 23 45 67 89',
         phoneDesc: 'Lun-Ven 9h-18h',
@@ -213,8 +213,8 @@ export const translations = {
     nav: {
       home: 'Home',
       services: 'Services',
-      projects: 'Projects',
-      blog: 'Blog',
+      projects: 'Products',
+      blog: 'News',
       contact: 'Contact'
     },
     // Theme
@@ -249,9 +249,9 @@ export const translations = {
         }
       },
       about: {
-        title: 'About Sapion',
+        title: 'About Sidereal',
         subtitle: 'SAP expertise at the service of your digital transformation',
-        description: 'For over 10 years, Sapion has been supporting companies in their digital transformation with innovative and high-performance SAP solutions. Our personalized approach guarantees measurable and sustainable results.',
+        description: 'For over 10 years, Sidereal has been supporting companies in their digital transformation with innovative and high-performance SAP solutions. Our personalized approach guarantees measurable and sustainable results.',
         stats: {
           projects: 'Projects completed',
           clients: 'Satisfied clients',
@@ -324,10 +324,10 @@ export const translations = {
         brochure: 'Download our brochure'
       }
     },
-    // Projects page
+    // Projects page (displayed as Products)
     projects: {
-      title: 'Our Projects',
-      subtitle: 'Discover our achievements and successful transformations we have led for our clients',
+      title: 'Our Products',
+      subtitle: 'Discover our product offerings and solutions designed for your SAP operations',
       filters: {
         all: 'All projects',
         cloud: 'Cloud Migration',
@@ -346,9 +346,9 @@ export const translations = {
         support: 'Continuous support'
       }
     },
-    // Blog page
+    // Blog page (displayed as News)
     blog: {
-      title: 'Our Blog',
+      title: 'News',
       subtitle: 'News, analysis and insights on the SAP ecosystem, technology trends and best practices',
       featured: 'Featured article',
       readMore: 'Read more',
@@ -390,7 +390,7 @@ export const translations = {
         emailTitle: 'Email',
         phoneTitle: 'Phone',
         addressTitle: 'Address',
-        email: 'contact@sapion.com',
+        email: 'contact@sidereal.com',
         emailDesc: 'We respond within 24h',
         phone: '+33 1 23 45 67 89',
         phoneDesc: 'Mon-Fri 9am-6pm',

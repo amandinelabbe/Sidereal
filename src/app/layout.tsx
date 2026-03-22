@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ParticleBackground from "@/components/ParticleBackground";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import { ThemeProvider } from "@/lib/ThemeContext";
 
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sapion - SAP Cloud Services & Implementation",
+  title: "Sidereal - SAP Cloud Services & Implementation",
   description: "Expert en implémentation et optimisation de services cloud SAP pour une transformation digitale réussie.",
   keywords: ["SAP", "cloud", "implementation", "optimization", "digital transformation"],
 };
@@ -33,6 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark-theme`}
       >
         <ThemeProvider>
+          <ParticleBackground />
           <LanguageProvider>
             <Header />
             <main className="pt-16">

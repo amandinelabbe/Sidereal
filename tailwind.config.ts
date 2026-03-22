@@ -9,12 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#000000",
-        foreground: "#ffffff", 
-        primary: "#0066ff",
-        secondary: "#1a1a1a",
-        accent: "#00ff88",
-        muted: "#333333",
+        background: "var(--bg-primary)",
+        foreground: "var(--text-primary)",
+        primary:   "#0066ff",
+        secondary: "#0f1c2e",
+        accent:    "#00d4ff",
+        muted:     "#8ba3c7",
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },

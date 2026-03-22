@@ -1,122 +1,109 @@
 'use client';
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/lib/LanguageContext';
-import { useTheme } from '@/lib/ThemeContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const { language, setLanguage, t } = useLanguage();
-  const { theme, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
+  useEffect(() => { if (!isMobile) setIsMenuOpen(false); }, [isMobile]);
 
   const menuItems = [
-    { href: '/', label: t('nav.home') },
-    { href: '/services', label: t('nav.services') },
-    { href: '/projets', label: t('nav.projects') },
-    { href: '/blog', label: t('nav.blog') },
-    { href: '/contact', label: t('nav.contact') },
+    { href: '/',          label: t('nav.home') },
+    { href: '/services',  label: t('nav.services') },
+    { href: '/produits',  label: t('nav.projects') },
+    { href: '/actualite', label: t('nav.blog') },
+    { href: '/contact',   label: t('nav.contact') },
   ];
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'fr' ? 'en' : 'fr');
-  };
-
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <>
+      {/* Global style to prevent horizontal scroll */}
+      <style>{`html, body { max-width: 100vw; overflow-x: hidden; }`}</style>
+
+      <header style={{
+        position: 'fixed', top: 0, left: 0,
+        width: '100%', boxSizing: 'border-box',
+        zIndex: 100,
+        background: 'rgba(8,13,26,0.95)',
+        backdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: 'blur(20px)',
+        borderBottom: '1px solid rgba(0,212,255,0.08)',
+      }}>
+        <div style={{
+          width: '100%', boxSizing: 'border-box',
+          maxWidth: '1280px', margin: '0 auto',
+          padding: '0 1rem',
+          height: '4rem',
+          display: 'flex', alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
-              <Image 
-                src="/logo_sapion.png" 
-                alt="Sapion Logo" 
-                width={40} 
-                height={40}
-                className="object-contain"
-              />
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none', flexShrink: 0 }}>
+            <div style={{ width: '2.25rem', height: '2.25rem', borderRadius: '8px', overflow: 'hidden', flexShrink: 0 }}>
+              <Image src="/logo_sapion.png" alt="Sidereal" width={36} height={36} style={{ objectFit: 'contain' }} />
             </div>
-            <span className="text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300">
-              Sapion
-            </span>
+            <span style={{ fontSize: '1.15rem', fontWeight: 700, color: '#00d4ff', whiteSpace: 'nowrap' }}>Sidereal</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="nav-item-white text-white hover:text-accent px-3 py-2 transition-colors duration-300"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
+          {/* Desktop nav */}
+          {!isMobile && (
+            <nav style={{ display: 'flex', alignItems: 'center', gap: '0.125rem' }}>
+              {menuItems.map(item => (
+                <Link key={item.href} href={item.href}
+                  style={{ padding: '0.5rem 0.75rem', fontSize: '0.875rem', fontWeight: 500, color: '#ffffff', textDecoration: 'none', borderRadius: '8px', transition: 'background 0.2s', whiteSpace: 'nowrap' }}
+                  onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = 'rgba(0,212,255,0.08)'}
+                  onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = 'transparent'}>
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          )}
 
-          {/* Language Toggle, Theme Toggle & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center space-x-2 glass px-3 py-2 rounded-lg transition-colors duration-300 hover:scale-105"
-            >
-              <Globe className="w-4 h-4 text-accent" />
-              <span className="text-white font-medium uppercase">{language}</span>
+          {/* Right: lang + hamburger */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem', flexShrink: 0 }}>
+            {!isMobile && <div style={{ width: '1px', height: '1.25rem', background: 'rgba(0,212,255,0.2)' }} />}
+
+            <button onClick={() => setLanguage(language === 'fr' ? 'en' : 'fr')}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', padding: '0.35rem 0.6rem', borderRadius: '8px', border: '1px solid rgba(0,212,255,0.2)', background: 'rgba(0,212,255,0.06)', color: '#ffffff', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.05em', transition: 'all 0.2s', flexShrink: 0 }}
+              onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(0,212,255,0.14)'; el.style.borderColor = 'rgba(0,212,255,0.45)'; }}
+              onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.background = 'rgba(0,212,255,0.06)'; el.style.borderColor = 'rgba(0,212,255,0.2)'; }}>
+              <Globe style={{ width: '0.875rem', height: '0.875rem', color: '#00d4ff' }} />
+              <span style={{ textTransform: 'uppercase' }}>{language}</span>
             </button>
 
-            <button
-              onClick={toggleTheme}
-              className="flex items-center justify-center glass p-2 rounded-lg transition-all duration-300 hover:scale-105"
-              title={theme === 'dark' ? t('theme.switchToLight') : t('theme.switchToDark')}
-            >
-              {theme === 'dark' ? (
-                <Sun className="w-5 h-5 text-accent" />
-              ) : (
-                <Moon className="w-5 h-5 text-accent" />
-              )}
-            </button>
-
-            {/* Mobile menu button */}
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-lg glass transition-colors duration-300"
-            >
-              {isMenuOpen ? (
-                <X className="w-6 h-6 text-white" />
-              ) : (
-                <Menu className="w-6 h-6 text-white" />
-              )}
-            </button>
+            {isMobile && (
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)}
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem', height: '2rem', borderRadius: '8px', border: '1px solid rgba(0,212,255,0.2)', background: 'rgba(0,212,255,0.06)', color: '#ffffff', cursor: 'pointer', flexShrink: 0 }}>
+                {isMenuOpen ? <X style={{ width: '1.1rem', height: '1.1rem' }} /> : <Menu style={{ width: '1.1rem', height: '1.1rem' }} />}
+              </button>
+            )}
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile menu */}
         <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="md:hidden overflow-hidden"
-            >
-              <div className="py-4 space-y-2">
-                {menuItems.map((item, index) => (
-                  <motion.div
-                    key={item.href}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    <Link
-                      href={item.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      className="block px-4 py-3 text-white hover:text-accent hover:bg-secondary/50 rounded-lg transition-all duration-300"
-                    >
+          {isMobile && isMenuOpen && (
+            <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.25 }}
+              style={{ overflow: 'hidden', borderTop: '1px solid rgba(0,212,255,0.08)', width: '100%', boxSizing: 'border-box' }}>
+              <div style={{ padding: '0.5rem 1rem 0.75rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                {menuItems.map((item, i) => (
+                  <motion.div key={item.href} initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}>
+                    <Link href={item.href} onClick={() => setIsMenuOpen(false)}
+                      style={{ display: 'block', padding: '0.65rem 0.875rem', borderRadius: '8px', fontSize: '0.9rem', fontWeight: 500, color: '#ffffff', background: 'rgba(0,212,255,0.04)', textDecoration: 'none' }}>
                       {item.label}
                     </Link>
                   </motion.div>
@@ -125,8 +112,8 @@ const Header = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </nav>
-    </header>
+      </header>
+    </>
   );
 };
 
