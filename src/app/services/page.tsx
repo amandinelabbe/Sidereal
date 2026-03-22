@@ -71,9 +71,6 @@ export default function Services() {
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
           style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(0,212,255,0.1)', border: '1px solid rgba(0,212,255,0.25)', borderRadius: '9999px', padding: '0.35rem 1rem', fontSize: '0.75rem', fontWeight: 600, color: '#00d4ff', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '1.25rem' }}>
-            {isFr ? 'Expert SAP Cloud' : 'SAP Cloud Expert'}
-          </div>
           <h1 style={{ fontSize: 'clamp(1.75rem,5vw,3.5rem)', fontWeight: 800, color: '#ffffff', marginBottom: '1rem', lineHeight: 1.15 }}>
             {isFr ? 'Nos Services' : 'Our Services'}
           </h1>
