@@ -20,9 +20,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Skalisys - SAP Cloud Services & Implementation",
-  description: "Expert en implémentation et optimisation de services cloud SAP pour une transformation digitale réussie.",
-  keywords: ["SAP", "cloud", "implementation", "optimization", "digital transformation"],
+  title: "Skalisys - Expertise SAP & Performance",
+  description: "Expert en implémentation et optimisation de services SAP pour une transformation digitale réussie.",
+  keywords: ["SAP", "consulting", "implementation", "optimization", "digital transformation", "cloud", "ERP", "business solutions"],
 };
 
 export default function RootLayout({
