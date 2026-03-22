@@ -59,7 +59,7 @@ export default function Home() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(0,212,255,0.1)', border: '1px solid rgba(0,212,255,0.25)', borderRadius: '9999px', padding: '0.4rem 1.25rem', fontSize: 'clamp(0.72rem,2vw,0.85rem)', fontWeight: 600, color: '#00d4ff', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-              🚀 Advanced SAP Solutions
+              Advanced SAP Solutions
             </motion.div>
             <motion.h1 initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }}
               style={{ fontSize: 'clamp(1.75rem,6vw,3.5rem)', fontWeight: 800, color: '#ffffff', lineHeight: 1.15, marginBottom: '1rem' }}>
