@@ -48,6 +48,7 @@ export default function ParticleBackground() {
     let H = 0;
 
     function resize() {
+      if (!canvas) return;
       DPR = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
       W = canvas.width = Math.floor(window.innerWidth * DPR);
       H = canvas.height = Math.floor(window.innerHeight * DPR);
