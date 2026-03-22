@@ -66,11 +66,11 @@ export default function ParticleBackground() {
     }
 
     class ParticleClass implements Particle {
-      x: number;
-      y: number;
-      vx: number;
-      vy: number;
-      r: number;
+      x!: number;
+      y!: number;
+      vx!: number;
+      vy!: number;
+      r!: number;
 
       constructor() {
         this.reset(true);
@@ -119,11 +119,11 @@ export default function ParticleBackground() {
       }
 
       draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        ctx.fillStyle = CONFIG.colorParticle;
-        ctx.globalAlpha = isDark ? 0.9 : 0.7;
-        ctx.fill();
+        ctx!.beginPath();
+        ctx!.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+        ctx!.fillStyle = CONFIG.colorParticle;
+        ctx!.globalAlpha = isDark ? 0.9 : 0.7;
+        ctx!.fill();
       }
     }
 
@@ -146,8 +146,8 @@ export default function ParticleBackground() {
     const mouse = { x: null as number | null, y: null as number | null };
 
     function drawLinks() {
-      ctx.lineWidth = 1 * DPR;
-      ctx.strokeStyle = CONFIG.colorLink;
+      ctx!.lineWidth = 1 * DPR;
+      ctx!.strokeStyle = CONFIG.colorLink;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const a = particles[i];
@@ -157,19 +157,19 @@ export default function ParticleBackground() {
           const dist = Math.hypot(dx, dy);
           if (dist < CONFIG.linkDist * DPR) {
             const alpha = CONFIG.linkAlpha * (1 - dist / (CONFIG.linkDist * DPR));
-            ctx.globalAlpha = alpha;
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
-            ctx.stroke();
+            ctx!.globalAlpha = alpha;
+            ctx!.beginPath();
+            ctx!.moveTo(a.x, a.y);
+            ctx!.lineTo(b.x, b.y);
+            ctx!.stroke();
           }
         }
       }
-      ctx.globalAlpha = 1;
+      ctx!.globalAlpha = 1;
     }
 
     function loop() {
-      ctx.clearRect(0, 0, W, H);
+      ctx!.clearRect(0, 0, W, H);
 
       for (let i = 0; i < particles.length; i++) {
         particles[i].step(mouse.x, mouse.y);
