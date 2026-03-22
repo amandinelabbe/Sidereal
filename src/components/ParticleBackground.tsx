@@ -126,7 +126,7 @@ export default function ParticleBackground() {
       }
     }
 
-    let particles: Particle[] = [];
+    const particles: Particle[] = [];
     let targetCount = 0;
 
     function computeParticlesCount() {
