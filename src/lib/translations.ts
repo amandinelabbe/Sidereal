@@ -200,7 +200,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      description: 'Expert en implémentation et optimisation de services cloud SAP pour une transformation digitale réussie.',
+      description: 'Expert en implémentation et optimisation de services SAP.',
       quickLinks: 'Liens Rapides',
       contact: 'Contact',
       copyright: 'Tous droits réservés.',
