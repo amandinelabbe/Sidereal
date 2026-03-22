@@ -1,6 +1,6 @@
-# 🚀 Sidereal - Excellence SAP Solutions
+# 🚀 Skalisys - Excellence SAP Solutions
 <div align="center">
-  <img src="./public/logo_sapion.png" alt="Sidereal Logo" width="120" height="120" />
+  <img src="./public/logo_sapion.png" alt="Skalisys Logo" width="120" height="120" />
   
   ### **Construire de meilleures solutions SAP**
   
@@ -12,9 +12,9 @@
   [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0-purple?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
 </div>
 
-## 🏢 À propos de Sidereal
+## 🏢 À propos de Skalisys
 
-**Sidereal** est une entreprise spécialisée dans l'**implémentation et l'optimisation de services SAP**. Nous accompagnons les entreprises dans leur transformation en proposant des solutions sur mesure, performantes et sécurisées.
+**Skalisys** est une entreprise spécialisée dans l'**implémentation et l'optimisation de services SAP**. Nous accompagnons les entreprises dans leur transformation en proposant des solutions sur mesure, performantes et sécurisées.
 
 ### 🎯 Notre Mission
 Maximiser la performance des solutions SAP de nos clients grâce à une expertise technique de pointe et une approche centrée sur l'innovation.
@@ -39,21 +39,17 @@ Maximiser la performance des solutions SAP de nos clients grâce à une expertis
 | **Clients satisfaits** | 10+ |
 | **Années d'expérience** | 5+ |
 
-### 📊 Projets Phares
-- **Migration S/4HANA** - TechCorp (5000+ employés, 8 mois)
-- **Automatisation RH** - GlobalManufacturing (60% gain d'efficacité)
-- **Sécurisation GDPR** - FinanceGroup (100% conformité)
 
 ## 📧 Contact
 
 **Nous contacter :**
-- 📧 Email : [contact@sidereal.com](mailto:contact@sidereal.com)
-- 🔗 LinkedIn : [linkedin.com/company/sidereal](https://linkedin.com/company/sidereal)
-- 🌐 Site web : [sidereal.com](https://sidereal.com)
+- 📧 Email : [contact@skalisys.fr](mailto:contact@skalisys.fr)
+- 🔗 LinkedIn : [linkedin.com/company/skalisys](https://linkedin.com/company/skalisys)
+- 🌐 Site web : [skalisys.fr](https://skalisys.fr)
 
 ---
 
 <div align="center">
-  <p><strong>© 2025 Sidereal. Tous droits réservés.</strong></p>
+  <p><strong>© 2025 Skalisys. Tous droits réservés.</strong></p>
   <p><em>Expertise SAP • Innovation Cloud • Transformation Digitale</em></p>
 </div>

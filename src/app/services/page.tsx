@@ -182,7 +182,7 @@ export default function Services() {
                   {isFr ? 'Prendre contact' : 'Get in touch'} <ArrowRight style={{ width: '1rem', height: '1rem' }} />
                 </button>
               </Link>
-              <a href="/brochure/Sidereal_Brochure.pdf" download style={{ textDecoration: 'none' }}>
+              <a href="/brochure/Skalisys_Brochure.pdf" download style={{ textDecoration: 'none' }}>
                 <button style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', border: '2px solid rgba(0,212,255,0.35)', borderRadius: '12px', padding: '0.875rem 1.75rem', color: '#00d4ff', background: 'transparent', fontWeight: 700, fontSize: 'clamp(0.875rem,2vw,1rem)', cursor: 'pointer' }}>
                   <LinkIcon style={{ width: '1rem', height: '1rem' }} />
                   {isFr ? 'Notre brochure' : 'Our brochure'}

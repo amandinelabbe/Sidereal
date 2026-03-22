@@ -54,9 +54,9 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none', flexShrink: 0 }}>
             <div style={{ width: '2.25rem', height: '2.25rem', borderRadius: '8px', overflow: 'hidden', flexShrink: 0 }}>
-              <Image src="/logo_sapion.png" alt="Sidereal" width={36} height={36} style={{ objectFit: 'contain' }} />
+              <Image src="/logo_sapion.png" alt="Skalisys" width={36} height={36} style={{ objectFit: 'contain' }} />
             </div>
-            <span style={{ fontSize: '1.15rem', fontWeight: 700, color: '#00d4ff', whiteSpace: 'nowrap' }}>Sidereal</span>
+            <span style={{ fontSize: '1.15rem', fontWeight: 700, color: '#00d4ff', whiteSpace: 'nowrap' }}>Skalisys</span>
           </Link>
 
           {/* Desktop nav */}

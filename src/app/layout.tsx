@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sidereal - SAP Cloud Services & Implementation",
+  title: "Skalisys - SAP Cloud Services & Implementation",
   description: "Expert en implémentation et optimisation de services cloud SAP pour une transformation digitale réussie.",
   keywords: ["SAP", "cloud", "implementation", "optimization", "digital transformation"],
 };

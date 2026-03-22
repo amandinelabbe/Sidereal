@@ -28,11 +28,11 @@ export default function Home() {
     compatBadge:   isFr ? '✓ Compatibilité native'    : '✓ Native compatibility',
     compatTitle:   isFr ? 'Intégration native dans votre paysage SAP' : 'Native integration into your SAP landscape',
     compatSub:     isFr ? "Nos solutions s'intègrent directement dans vos environnements SAP existants, sans migration ni remplacement de vos systèmes." : 'Our solutions integrate directly into your existing SAP environments, without migration or replacement of your systems.',
-    whyTitle:      isFr ? 'Pourquoi choisir Sidereal ?' : 'Why choose Sidereal?',
+    whyTitle:      isFr ? 'Pourquoi choisir Skalisys ?' : 'Why choose Skalisys?',
     whySub:        isFr ? 'Une approche différente pour maximiser la valeur de vos investissements SAP' : 'A different approach to maximize the value of your SAP investments',
     ctaBadge:      isFr ? 'Prêt à démarrer ?' : 'Ready to start?',
     ctaTitle:      isFr ? "Transformez vos opérations SAP dès aujourd'hui" : 'Transform your SAP operations today',
-    ctaSub:        isFr ? "Contactez-nous pour une démonstration personnalisée et découvrez comment Sidereal peut s'intégrer à votre environnement SAP." : 'Contact us for a personalized demo and discover how Sidereal can integrate with your SAP environment.',
+    ctaSub:        isFr ? "Contactez-nous pour une démonstration personnalisée et découvrez comment Skalisys peut s'intégrer à votre environnement SAP." : 'Contact us for a personalized demo and discover how Skalisys can integrate with your SAP environment.',
     ctaDemo:       isFr ? 'Demander une démo' : 'Request a demo',
     ctaProducts:   isFr ? 'Voir nos produits' : 'View our products',
     ctaServices:   isFr ? 'Découvrir tous nos services' : 'Discover all our services',
@@ -67,7 +67,7 @@ export default function Home() {
             </motion.h1>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.5 }}
               style={{ fontSize: 'clamp(1.1rem,4vw,2rem)', fontWeight: 700, marginBottom: '1.5rem', background: 'linear-gradient(90deg, #00d4ff, #4f8ef7)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              with Sidereal Expertise
+              with Skalisys Expertise
             </motion.div>
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }}
               style={{ fontSize: 'clamp(0.9rem,2vw,1.15rem)', color: '#8ba3c7', maxWidth: '48rem', margin: '0 auto 2.5rem', lineHeight: 1.75, padding: '0 0.5rem' }}>
@@ -159,7 +159,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY SIDEREAL */}
+      {/* WHY SKALISYS */}
       <section style={{ padding: 'clamp(3rem,6vw,5rem) 1rem' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}

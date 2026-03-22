@@ -40,9 +40,9 @@ export const translations = {
         }
       },
       about: {
-        title: 'À propos de Sidereal',
+        title: 'À propos de Skalisys',
         subtitle: 'L\'expertise SAP au service de votre transformation digitale',
-        description: 'Depuis plus de 10 ans, Sidereal accompagne les entreprises dans leur transformation digitale avec des solutions SAP innovantes et performantes. Notre approche personnalisée garantit des résultats mesurables et durables.',
+        description: 'Depuis plus de 10 ans, Skalisys accompagne les entreprises dans leur transformation digitale avec des solutions SAP innovantes et performantes. Notre approche personnalisée garantit des résultats mesurables et durables.',
         stats: {
           projects: 'Projets réalisés',
           clients: 'Clients satisfaits',
@@ -181,7 +181,7 @@ export const translations = {
         emailTitle: 'Email',
         phoneTitle: 'Téléphone', 
         addressTitle: 'Adresse',
-        email: 'contact@sidereal.com',
+        email: 'contact@skalisys.fr',
         emailDesc: 'Nous répondons sous 24h',
         phone: '+33 1 23 45 67 89',
         phoneDesc: 'Lun-Ven 9h-18h',
@@ -249,9 +249,9 @@ export const translations = {
         }
       },
       about: {
-        title: 'About Sidereal',
+        title: 'About Skalisys',
         subtitle: 'SAP expertise at the service of your digital transformation',
-        description: 'For over 10 years, Sidereal has been supporting companies in their digital transformation with innovative and high-performance SAP solutions. Our personalized approach guarantees measurable and sustainable results.',
+        description: 'For over 10 years, Skalisys has been supporting companies in their digital transformation with innovative and high-performance SAP solutions. Our personalized approach guarantees measurable and sustainable results.',
         stats: {
           projects: 'Projects completed',
           clients: 'Satisfied clients',
@@ -390,7 +390,7 @@ export const translations = {
         emailTitle: 'Email',
         phoneTitle: 'Phone',
         addressTitle: 'Address',
-        email: 'contact@sidereal.com',
+        email: 'contact@skalisys.fr',
         emailDesc: 'We respond within 24h',
         phone: '+33 1 23 45 67 89',
         phoneDesc: 'Mon-Fri 9am-6pm',

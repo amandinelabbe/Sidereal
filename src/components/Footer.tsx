@@ -26,9 +26,9 @@ const Footer = () => {
           <motion.div initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} transition={{ duration:0.6 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
               <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '8px', overflow: 'hidden' }}>
-                <Image src="/logo_sapion.png" alt="Sidereal Logo" width={40} height={40} style={{ objectFit: 'contain' }} />
+                <Image src="/logo_sapion.png" alt="Skalisys Logo" width={40} height={40} style={{ objectFit: 'contain' }} />
               </div>
-              <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#ffffff' }}>Sidereal</span>
+              <span style={{ fontSize: '1.25rem', fontWeight: 700, color: '#ffffff' }}>Skalisys</span>
             </div>
             <p style={{ color: '#8ba3c7', maxWidth: '28rem', lineHeight: 1.7, fontSize: '0.9rem' }}>
               {t('footer.description')}
@@ -74,7 +74,7 @@ const Footer = () => {
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <a
-                href="mailto:contact@sidereal.com"
+                href="mailto:contact@skalisys.fr"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                   color: '#8ba3c7', textDecoration: 'none', fontSize: '0.9rem',
@@ -84,14 +84,14 @@ const Footer = () => {
                 onMouseLeave={e => (e.currentTarget as HTMLElement).style.color = '#8ba3c7'}
               >
                 <Mail style={{ width: '1rem', height: '1rem', flexShrink: 0 }} />
-                <span>contact@sidereal.com</span>
+                <span>contact@skalisys.fr</span>
               </a>
               <div>
                 <a
-                  href="https://www.linkedin.com/company/sidereal"
+                  href="https://www.linkedin.com/company/skalisys"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="LinkedIn Sidereal"
+                  title="LinkedIn Skalisys"
                   style={{
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                     width: '2.25rem', height: '2.25rem',
@@ -122,7 +122,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', marginTop: '2.5rem', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <p style={{ color: '#8ba3c7', fontSize: '0.8rem' }}>
-            © {new Date().getFullYear()} Sidereal. {t('footer.copyright')}
+            © {new Date().getFullYear()} Skalisys. {t('footer.copyright')}
           </p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <Link

@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: Mail, value: 'contact@sidereal.fr', description: isFr ? 'Nous répondons sous 24h' : 'We respond within 24h', href: 'mailto:contact@sidereal.fr' },
+    { icon: Mail, value: 'contact@skalisys.fr', description: isFr ? 'Nous répondons sous 24h' : 'We respond within 24h', href: 'mailto:contact@skalisys.fr' },
     { icon: Phone, value: '+33 6 25 73 20 21', description: isFr ? 'Lun-Ven 9h-18h' : 'Mon-Fri 9am-6pm', href: 'tel:+33625732021' },
     { icon: MapPin, value: 'Toulouse, France', description: isFr ? 'Intervention sur site en France / à distance en Europe' : 'On-site in France / remote across Europe', href: undefined },
   ];
